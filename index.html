@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>教育技术与传播学院</title>
+    <link rel="shortcut icon" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<div class="yellow-line"></div> 		<!-- 黄条部分 -->
+		<div id="head-title">					<!--  版本切换、登录部分 -->
+			<ul>
+				<span>为获得最佳效果，请使用IE7、Chrome10或更高版本的浏览器</span> 
+				<li id="img1"><a href="">手机版本</a></li>
+				<li id="img2"><a href="">用户注册<span></span></a></li>
+				<li id="img3"><a href="">用户登录<span></span></a></li>
+				<li id="img4"><a href="">学院网站<span></span></a></li>
+			</ul>
+		</div>
+		<div id="banner">
+			<img src="images/banner.png">
+		</div>
+	</header>
+	<nav id="nav">      <!-- 导航条 -->
+    	<div id="menu">
+			<ul>
+  				<li><a href="#">首页</a></li>
+  				<li><a href="#">学院概况</a>
+    				<!-- <ul>
+       				 <li><a href="#">学院简介</a></li>
+				       <li><a href="#">领导班子</a></li>
+				       <li><a href="#">机构设置</a></li>
+				       <li><a href="#">系和教研室</a></li>
+    				</ul> -->
+  				</li>
+  				<li><a href="#">新闻通知</a>
+    				<!-- <ul>
+				      <li><a href="#">学院动态</a></li>
+				      <li><a href="">学生通知</a></li>
+				      <li><a href="#">教师通知</a></li>
+				    </ul> -->
+				  </li>
+			    <li><a href="#">学生园地</a>
+            <!-- <ul>
+  				      <li><a href="#">活动剪影</a></li>
+  				      <li><a href="#">周程安排</a></li>
+  				      <li><a href="#">招聘通知</a></li>
+                <li><a href="#">花名册</a></li>
+				    </ul> -->
+          </li>
+			    <li><a href="#">学科专业</a>
+              <!-- <ul>
+  				      <li><a href="#">专业设置</a></li>
+  				      <li><a href="#">教育技术学</a></li>
+  				      <li><a href="#">电视编导</a></li>
+                <li><a href="#">数字媒体</a></li>
+                <li><a href="#">网络新媒体</a></li>
+                <li><a href="#">实验中心</a></li>
+                <li><a href="#">实践基地</a></li>
+				      </ul> -->
+          </li>
+          <li><a href="#">招生就业</a>
+            <!-- <ul>
+				      <li><a href="#">本科招生</a></li>
+				      <li><a href="#">研究生招生</a></li>
+				      <li><a href="#">学生就业</a></li>
+              <li><a href="#">招聘信息</a></li>
+				    </ul> -->
+          </li>
+          <li><a href="#">师资队伍</a></li>
+          <li><a href="#">学生活动</a></li>
+          <li><a href="#">作品展示</a></li>
+          <li><a href="#">党团校友</a></li>
+			</ul>
+		</div> 
+  	</nav>
+     
+    <figure class="ban"> <!-- 焦点图片部分 -->
+   		<div id="banBox">
+    		<ul id="con1">
+      			<li><img src="images/fucs1.jpg" /></li>
+      			<li><img src="images/fucs2.jpg" /></li>
+      			<li><img src="images/fucs3.jpg" /></li>
+      			<li><img src="images/fucs4.jpg" /></li>
+      			<li><img src="images/fucs5.jpg" /></li>
+    		</ul>
+    		<ul id="con2"></ul>
+  		</div>
+	<script type="application/javascript">
+	    var area=document.getElementById('banBox');
+			area.innerHTML+=area.innerHTML;
+			area.scrollTop=0;
+			var iLiHeight=300;
+			var time;
+			var speed=1;
+			var delay=3000;
+		function startMove(){
+			area.scrollTop+=10;
+			time=setInterval('scrollUp()',speed) 
+			};
+		function scrollUp(){
+	  		// area.scrollTop++;
+	   		if(area.scrollTop%iLiHeight==0){
+				clearInterval(time);
+				setTimeout('startMove()',delay)
+			}
+	   		else{
+				area.scrollTop++;
+				if(area.scrollTop>=area.scrollHeight/2){
+					area.scrollTop=10;
+					}
+				}
+			}
+		setTimeout('startMove()',delay);
+	</script>
+    
+    	<figcaption>
+     		<p>hello world </p>
+     		<p>hello world </p>
+     		<p>hello world </p>
+            <div id="a"></div>
+  			<div id="b"></div>
+        </figcaption>	
+	</figure>
+    
+  	<article id="art">	<!-- 主干 -->
+    	<section class="right_box">
+        	<div class="box1">
+            	<span class="box_span"><h3 id="box_news">学院动态 <a href="#">更多>></a></h3></span>
+                <ul>
+                	<li><a href="#">1 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">2 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">3 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">4 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">5 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">6 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">7 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">8 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">9 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                </ul>
+                <img width="600px" height="90px" src="images/header_1.jpg">
+            </div>
+            <div class="box1">
+            	<span class="box_span"><h3 id="box_act">活动剪影 <a href="#">更多>></a></h3></span>
+                <ul>
+                	<li><a href="#">1 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">2 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">3 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">4 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">5 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">6 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">7 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">8 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                    <li><a href="#">9 2015年校园文体艺术节之微电影创作大赛圆满落幕</a><span>03-18</span></li>
+                </ul>
+                <img width="600px" height="90px" src="images/toystory2.jpg">
+            </div>	
+            <div class="box1">
+            	<span class="box_span"><h3 id="box_show">作品展示<a href="#">更多>></a></h3></span>
+                <figure class="figure">
+                	<div id="img_border"><img src="images/pic_01.jpg" width="320px" height="190px"/></div>
+   					<figcaption>
+                     	<h3 style="margin-bottom:5px;"> 《Web编程》课程期末作品（11师范）</h3>
+                        <p style="margin-bottom:5px;">admin | 2015-01-12</p>
+                        <p style="text-align:left;text-indent: 2em;">
+                        	《Web编程》课程以网站设计作为期末考核作品，本次展示的优秀作品有《T-SZone教学空间》、《乐游旅游网》、《Doris珠宝网站》《i-learning在线学习平台》、《优look在线视频网站》等。
+                        </p>
+                        <P style="text-align:left">（指导老师：赵剑冬)</P>
+                        <p style="text-align:left">阅读>><p>
+  					</figcaption>		
+				</figure>
+                
+                <figure class="figure fig1">
+                	<div id="img_border"><img src="images/pic_02.jpg" width="320px" height="190px"/></div>
+   					<figcaption>
+                     	<h3 style="margin-bottom:5px;">2013年“最美中国”主题微电影创作大赛获奖作品</h3>
+                        <p style="margin-bottom:5px;">admin | 2015-01-12</p>
+                        <p style="text-align:left;text-indent: 2em;">
+                        	本次大赛由校团委举办，以“最美中国”为主题演绎多样的“中国梦”，丰富了“中国梦”的时代内涵，展现其强大感召力。其中刘嘉委《客家阿哥》和《色彩虚幻之旅》分获一等奖和二等奖，黄思恋《无声的梦》获二等奖。
+                        </p>
+                        <p style="text-align:left">阅读>><p>
+  					</figcaption>		
+				</figure>
+                
+                <figure class="figure fig2">
+                	<div id="img_border"><img src="images/pic_03.jpg" width="320px" height="190px"/></div>
+   					<figcaption>
+                     	<h3 style="margin-bottom:5px;">2013年12月《暖冬》电子期刊</h3>
+                        <p style="margin-bottom:5px;">admin | 2015-01-12</p>
+                        <p style="text-align:left;text-indent: 2em;">
+                        	本期的主题是“暖冬”。主要内容有生活类：春节的来历、潮汕美食、韩国饮食文化、豪车款型，文学类：漂流瓶、好的心情和好的心态，视频类：老人与海等等，deg，下一个就是你！guangshishumei@163.com，长期征稿哦。
+                        </p>
+                        <p style="text-align:left">阅读>><p>
+  					</figcaption>		
+				</figure>
+                
+                <figure class="figure fig3">
+                	<div id="img_border"><img src="images/pic_04.jpg" width="320px" height="190px"/></div>
+   					<figcaption>
+                     	<h3 style="margin-bottom:5px;">2013年第四届全国教育影视优秀作品大赛获奖作品</h3>
+                        <p style="margin-bottom:5px;">admin | 2015-01-12</p>
+                        <p style="text-align:left;text-indent: 2em;">
+                        	本届大赛在海口举行，我院获得7个二等奖和7个三等奖。林志权《海洋精灵·海龟》获科普片二等奖，叶发伟《生命之源》等6个作品获原创DV二等奖。《羊晨》获专题片类三等奖，《逐梦天蓝》等6个作品获创DV类三等奖。
+                        </p>
+                        <p style="text-align:left">阅读>><p>
+  					</figcaption>		
+				</figure>
+            </div>		
+    	</section>
+      <aside class="left_aside">		<!-- 左边 -->
+    		<div id="aside_bar1" class="side">
+    			<h3 id="h_tea">教师通知</h3>
+    			<ul>
+  					<li><a href="#">1.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">2.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">3.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">4.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">5.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">6.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">7.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">8.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">9.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+            <li><a href="#">10.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+    			</ul>
+    			<a href="">更多&gt;&gt;</a>
+    		</div>
+            <div id="aside_bar2">
+              <form>
+      		 			<input id="search" type="text" placeholder=" 请输入搜索内容">	 		
+      	 			</form>
+            </div>
+            <div id="aside_bar3" class="side">
+            	<img src="images/h1.jpg">	
+            </div>
+            <div id="aside_bar1" class="side Top_aline"><!-- 同教师通知的样式-->
+            	<h3 id="h_stu">学生通知</h3>
+    			<ul>
+  					<li><a href="#">1.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">2.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">3.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">4.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">5.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">6.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">7.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">8.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+  					<li><a href="#">9.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+            <li><a href="#">10.十年生死两茫茫，不思量，自难忘</a><span>03-18</span></li>
+    			</ul>
+    			<a href="">更多&gt;&gt;</a>	
+            </div>
+            <div class="side Top_aline">
+            	<img src="images/h2.jpg">
+            </div>
+            <div id="aside_bar1" class="side Top_aline">
+            	<h3 id="h_hor">荣誉榜</h3>
+    			<ul>
+					<li><a href="#"><b>十年生死两茫茫，不思量，自难忘</b></a></li>
+					<li><a href="#"><b>十年生死两茫茫，不思量，自难忘</b></a></li>
+					<li><a href="#"><b>十年生死两茫茫，不思量，自难忘</b></a></li>
+    			</ul>
+            </div>
+            <div class="side Top_aline ">
+            	<img src="images/h3.jpg">
+            </div>
+            <div id="aside_bar1" class="side Top_aline">
+            	<h3 id="h_hor">友情链接</h3>
+    			<ul>
+					<li><a href="#">1.广东技术师范学院</a></li>
+					<li><a href="#">2.广东技术师范学院美丽的校园</a></li>
+					<li><a href="#">3.广东技术师范学院的图书馆</a></li>
+					<li><a href="#">4.广东技术师范学院 教育技术与传播学院</a></li>
+                    <li><a href="#">5.广东技术师范学院 教育技术与传播学院</a></li>
+					<li><a href="#">6.广东技术师范学院 教育技术与传播学院</a></li>
+                    <li><a href="#">7.广东技术师范学院美丽的校园</a></li>
+					<li><a href="#">8.广东技术师范学院的图书馆</a></li>
+    			</ul>
+            </div>
+            <div class="side Top_aline">
+            	<img src="images/h5.jpg">
+            </div>
+            <div id="aside_bar1" class="side Top_aline">
+                <h3 id="h_hor">联系我们</h3>
+                <ul>
+                    <li><a href="#"><b>教育技术与传播学院</b></a></li>
+                    <li><a href="#"><b>教育技术中心</b></a></li>
+                    <li><a href="#">地址：广州市天河区中山大道西293号实验楼505</a></li>
+                    <li><a href="#">邮编：510665</a></li>
+                    <li><a href="#">电话：020-38256633</a></li>
+                    <li><a href="#">邮箱：21646523@QQ.com</a></li>
+                </ul>
+            </div>
+    	</aside>
+  	</article>
+  	<footer>			<!-- 底部	 -->
+        <div class="footer">
+            <p>版权所有 2012-2014 © 广东技术师范学院 教育技术与传播学院 教育技术中心</p>
+            <p>网站开通日期：2013-05-01 | 技术支持：Justin | 联系邮箱：21646523@QQ.com | 网站故事</p>
+            <p>站长统计 | 今日IP[1] | 今日PV[1] | 昨日IP[1] | 昨日PV[1] | 当前在线[1]</p>
+        </div>
+        <div class="yellow-line"></div>				
+    </footer> 
+	<div id="back_top"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
